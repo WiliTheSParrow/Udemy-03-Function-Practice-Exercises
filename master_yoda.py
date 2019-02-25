@@ -7,7 +7,8 @@ def master_yoda(text):
     b = a[::-1]
     c = " ".join(b)
     return c
-	
+
+
 # Check
 master_yoda('I am home')
 

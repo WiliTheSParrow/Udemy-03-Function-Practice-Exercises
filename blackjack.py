@@ -4,21 +4,22 @@
 # blackjack(9,9,9) --> 'BUST'
 # blackjack(9,9,11) --> 19
 
-def blackjack(a,b,c):
-    d=a+b+c
+def blackjack(a, b, c):
+    d = a + b + c
     if d <= 21:
         return d
     elif d > 21:
-        if a == 11 or b == 11 or c==11:
-            return d-10
+        if a == 11 or b == 11 or c == 11:
+            return d - 10
         else:
             return 'BUST'
-    
-# Check
-blackjack(5,6,7)
+
 
 # Check
-blackjack(9,9,9)
+blackjack(5, 6, 7)
 
 # Check
-blackjack(9,9,11)
+blackjack(9, 9, 9)
+
+# Check
+blackjack(9, 9, 11)
